@@ -12,17 +12,15 @@ A organização estrutura seus repositórios e iniciativas em dois grandes pilar
 flowchart LR
     subgraph Governance["1. Compliance & Security Standards"]
         direction TB
-        P1["Políticas & Frameworks<br/>(NIST, HIPAA, PCI, CIS)"]
-        P2["Checklists Operacionais<br/>(CTO & DevOps)"]
-        P3["Avaliação de Fornecedores<br/>(VSAQ)"]
-        P4["Divulgação & Políticas Públicas<br/>(security.txt / Security Page)"]
+        P1["security-standards<br/>(Hub Unificado: Políticas, Checklists, VSAQ e Templates)"]
+        P2["awesome-security<br/>(Lista Curada: Frameworks, Tools e Padrões)"]
     end
 
     subgraph Agents["2. Offensive Security & AI Agents"]
         direction TB
-        A1["Pentest Automatizado<br/>(Shannon / Web & API)"]
-        A2["Engenharia Reversa por IA<br/>(App & Binary Analysis)"]
-        A3["Skills de Auditoria Contínua<br/>(Verified Machine-Readable Findings)"]
+        A1["agent-pentester<br/>(Pentest Automatizado Web & API)"]
+        A2["agent-reverse-engineer<br/>(Engenharia Reversa por IA)"]
+        A3["skill-security-audit<br/>(Skills de Auditoria Contínua)"]
     end
 
     Governance -.->|Alimenta Base de Conhecimento| Agents
@@ -30,14 +28,11 @@ flowchart LR
 
 ---
 
-## 📂 Mapa de Repositórios
+## 📂 Repositórios em Destaque
 
-### 🛡️ Padrões, Políticas e Governança
-* [**security-policy-templates**](https://github.com/SecurityStandards/security-policy-templates): Políticas, padrões e procedimentos de controle mapeados para HIPAA, NIST CSF, PCI DSS, FedRAMP e CIS Controls.
-* [**CTOSecurityChecklist**](https://github.com/SecurityStandards/CTOSecurityChecklist): Checklist prático de segurança para lideranças técnicas e CTOs de SaaS.
-* [**DevOpsSecurityChecklist**](https://github.com/SecurityStandards/DevOpsSecurityChecklist): Práticas essenciais de segurança para infraestrutura, pipelines CI/CD e operações em nuvem.
-* [**security-page**](https://github.com/SecurityStandards/security-page): Template pronto para implementação de páginas públicas de segurança e programas de divulgação de vulnerabilidades.
-* [**vsaq**](https://github.com/SecurityStandards/vsaq): Questionário interativo de avaliação de segurança de parceiros e terceiros (*Vendor Security Assessment Questionnaire*).
+### 🌟 Hub Canônico e Curadoria
+* [**security-standards**](https://github.com/SecurityStandards/security-standards): **Repositório Unificado** contendo políticas mapeadas (NIST, HIPAA, PCI DSS, CIS), checklists operacionais (CTO e DevOps), aplicação de questionários de fornecedores (Google VSAQ) e templates de páginas de segurança.
+* [**awesome-security**](https://github.com/SecurityStandards/awesome-security): Lista curada definitiva no padrão Awesome cobrindo frameworks, ferramentas de DevSecOps, políticas, auditoria e agentes de IA.
 
 ### 🤖 Inteligência Artificial & Segurança Ofensiva
 * [**agent-pentester**](https://github.com/SecurityStandards/agent-pentester): Agente autônomo de pentest focado em análise de código-fonte, mapeamento de vetores de ataque e validação de exploits em aplicações web e APIs.
